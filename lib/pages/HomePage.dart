@@ -11,12 +11,12 @@ class HomePageState extends State with TickerProviderStateMixin
   Widget build(BuildContext context)
   {
     AudioCache player = new AudioCache();
-    TabController controller = new TabController(length: 2, vsync: this);
+//    TabController controller = new TabController(length: 2, vsync: this);
 
     return new Scaffold(
       body:
-          TabBarView(
-            controller: controller,
+          PageView(
+//            controller: controller,
             children: <Widget>[
             Container(
               child: new Center(
